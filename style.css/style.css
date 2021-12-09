@@ -1,0 +1,256 @@
+*,
+*;;::before,
+*;;::after{
+        box-sizing: border-box;
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Bold;
+    src: url("../fonts/SF-Pro-Display-Regular.woff") format("WOFF"),
+         url("../fonts/SF-Pro-Display-regular.woff2") format(WOFF2);
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SF-Pro-Display-Bold;
+    src: url("../fonts/SF-Pro-Display-Bold.woff") format("WOFF"),
+         url("../fonts/SF-Pro-Display-Bold.woff2") format(WOFF2);
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: spaceagecyrillic-regular;
+    src: url("../fonts/spaceagecyrillic-regular.ttf") format("ttf"),
+         url("../fonts/spaceagecyrillic-regular.woff") format(WOFF);
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+
+body{
+    color: #fff;
+    font-family: SF-Pro-Display-Bold;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor:pointer;
+    color: inherit;
+}
+
+.container{
+   max-width: 1220px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 10px;
+   padding-right: 10px;
+
+
+}
+
+.header{
+    background-image: url(../images/фон\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 0 30px;
+
+}
+
+.meni__list{
+    display: flex;
+}
+
+.menu__item{
+    margin-right: 30px;
+}
+
+.menu__link{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 23px;
+    transition: color .5s;
+}
+.menu__link:hover{
+    color: darkred;
+}
+.phone{
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: auto;
+}
+
+.login{
+    margin-left: 22px;
+    margin-right: 134px;
+}
+
+.header__content{
+    max-width: 600px;
+}
+
+.header__title{
+    font-family: spaceagecyrillic-regular;
+    font-size: 60px;
+    line-height: 60px; 
+    font-weight: 400;   
+}
+
+.header__title span{
+    font-size: 110px;
+    line-height: 110px;
+}
+ 
+.header__text{
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-bottom: 50px;
+}
+
+.header__btn{
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 15px 10px 16px;
+}
+
+.header__description{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+    margin-top: 40px;
+}
+
+.header__description__text{
+    width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.header__description__text + .header__description__text{
+    margin-left: 52px;
+}
+
+
+
+
+.about{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/Group\ 13.png);
+}
+.title{
+    font-family: spaceagecyrillic-regular;
+    padding: 100px 0;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+}
+.about__item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+    flex-wrap: wrap;
+}
+.about__img{
+    max-width: 100%;
+}
+.about__content{
+width: 600px;
+}
+.about__content__title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.about__content__subtitle{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #036CCA;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.about__content__text{
+display: flex;
+justify-content: space-between;
+margin-bottom: 50px;
+}
+.about__content__text p{
+    width: 165px;
+}
+
+.about__table{
+margin-bottom: 50px;
+}
+.about__table__tr{
+border: 1px solid silver;
+border-left: none;
+border-right: none;
+}
+.about__table__tr + .about__table__tr{
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button{
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 25px 45px;
+}
+
+.about__table__td{
+padding: 10px 30px 10px 0;
+}
+.about__table__td span{
+font-size: 14px;
+line-height: 17px;
+display: block;
+}
+
+.table__caption{
+caption-side: bottom;
+text-align: left;
+margin-top: 20px;
+font-size: 12x;
+line-height: 14px;
+}
+
+.about__item:nth-child(odd){
+    -ms-flex-direction: row-reverse;
+}
