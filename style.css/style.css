@@ -254,3 +254,127 @@ line-height: 14px;
 .about__item:nth-child(odd){
     -ms-flex-direction: row-reverse;
 }
+
+
+
+.how__two{
+    background-image: url(../images/Group\ 15.jpg);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.how__two__box{
+    text-align: center;
+
+}
+.how__two__box circle,
+.how__two__box text,
+foreignObject{
+    transition: all .5s;
+    cursor: pointer;
+}
+.how__two__box g:hover circle{
+    r: 20;
+    fill: #036CCA;
+}
+.how__two__box g:hover text{
+    fill:#036CCA;
+    font-size: 32px;
+}
+
+.how__two__box g:hover foreignObject{
+    color:#036CCA;
+    font-size: 22px;
+}
+foreignObject{
+    text-align: left;
+}
+
+
+.to__book{
+    background-image: url(../images/Group\ 16.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.to__book__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.to__book__text{
+    width: 165px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: auto;
+    margin-right: 52px;
+    margin-top: 100px;
+}
+
+.to__book__text + .to__book__text{
+margin-left: 0;
+margin-right: 0;
+}
+
+.info{
+    background-image: url(../images/Group\ 19.jpg);
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.special__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.special__inner__item{
+    width: 500px;
+    
+}
+.special__inner__item__box{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+     margin-bottom: 25px;
+    border: 1px solid #fff;
+    padding: 40px 75px;
+    text-align: center;
+}
+.special__inner__item__text{
+    width: 236px;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 auto;
+}
+.special__inner__item__text span{
+    color:red;
+}
+.special__inner__item__newprice{
+    line-height: 53px;
+    font-size: 48px;
+}
+.special__inner__item__oldprice{
+    font-size: 14px;
+    text-align: right;
+    line-height: 17px;
+    margin-bottom: 16px;
+    position: relative;
+}
+.special__inner__item__oldprice::before{
+    content:'';
+    position: absolute;
+    width: 68px;
+    height: 1px;
+    background-color: red;
+    top: 7px;
+    right: 0;
+    transform: rotate(15deg);
+}
+.special__inner__btn{
+    width: 100%;
+}
