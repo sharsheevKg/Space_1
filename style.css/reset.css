@@ -92,3 +92,10 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+.header__top__button{
+    background-color: #000000;
+    color: gray;
+    width: auto;
+    height: 44px;
+}
